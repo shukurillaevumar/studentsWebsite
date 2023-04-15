@@ -1,38 +1,84 @@
-.App {
-  text-align: center;
+* {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  margin: 0px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  gap: 10px;
+}
+
+form input {
+  font-size: large;
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+  padding: 6px;
+  border-radius: 20px;
+}
+
+form label {
+  font-size: large;
+}
+
+form .gender {
+  display: flex;
+  font-size: large;
+}
+
+form button {
+  background-color: white;
+  border: 1px solid rgb(17, 161, 17);
+  border-radius: 20px;
+  width: 100%;
+  font-size: large;
+  padding: 15px;
+  margin-top: 10px;
+}
+
+form button:hover {
+  background-color: rgb(17, 161, 17);
   color: white;
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
+/* Result part */
+
+.mainBoxResult {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.resultBox {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 10px;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.resultBox span {
+  font-size: large;
 }
